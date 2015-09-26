@@ -1,0 +1,433 @@
+/*
+
+CSS   | YCSs    /      e      CSSb    |  e88~~\  CSS~~  CSS     ,d88~~\ 
+CSS   |  YCSs  /      d8b     |YCSs   | dCSS     CSS___ CSS     8CSS    
+CSS   |   YCSs/      /YCSs    | YCSs  | 8CSS __  CSS    CSS     `YCSs   
+CSS   |   /YCSs     /  YCSs   |  YCSs | 8CSS   | CSS    CSS      `YCSs, 
+YSS   |  /  YCSs   /____YCSs  |   YCSs| YCSS   | CSS    CSS        8CSS 
+ "8__/  /    YCSs /      YCSs |    YCSS  "88__/  CSS___ CSS____ \__88P' 
+
+_    ____ ____ ____ _  _    ____ _  _ ___     ____ _  _ ____ ____ ____ 
+|    |___ |__| |__/ |\ |    |__| |\ | |  \    [__  |__| |__| |__/ |___ 
+|___ |___ |  | |  \ | \|    |  | | \| |__/    ___] |  | |  | |  \ |___ 
+
+Enjoy the source code. Everything here is Creative Commons, share alike.
+Page Layout, Design, CSS & HTML by @woodenfox
+
+Gears Loader by http://preloaders.net
+
+*/
+
+/* KEYFRAME ANNIMATION FOR LOADING */
+
+@keyframes fade-out{
+	
+	0%{
+		opacity:1;
+		visibility:visible;
+		height:100%;
+	}
+	
+	50%{
+		height:100%;
+		opacity:1;
+	}
+	
+	70%{
+		opacity:1;
+	}
+
+	100%{
+		opacity:0;
+		height:0%;
+	}
+}
+
+@keyframes fade-in{
+	
+	0%{
+		opacity:0;
+	}
+	
+	50%{
+		height:0%;
+		opacity:0;
+	}
+
+	100%{
+		opacity:1;
+		height:100%;
+	}
+}
+
+@keyframes spin{
+
+	0%   {
+		 transform: rotate(0deg);
+		 opacity:1;
+		 }
+	100% {
+		 transform: rotate(360deg);
+		 opacity:1;
+	     }
+}
+
+
+.cover {
+	animation: fade-out 3s linear forwards;
+	position:fixed;
+	bottom:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:#FFF;
+	z-index:99;
+	opacity:0;
+	background: #FFF url('front-images/opacity-fade.png') repeat-x;
+	height:0%;
+	visibility:hidden;
+	cursor: none;
+	user-select: none;
+}
+
+.spin-gears {
+	background-image: url('front-images/gears.gif');
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:50px;
+	height:50px;
+}
+
+/* MAIN CSS */
+
+* {
+	margin:0;
+}
+
+body {
+	font-family:arial;
+	font-size: 400%;
+}
+
+p {
+	line-height: 2em;
+	margin: 0.7em 0.7em;
+
+}
+
+/* =========== MAIN-MESSAGE =========== */
+
+html, body {
+	height:100%;
+}
+
+#wrap { 
+	overflow: hidden;
+}
+
+#header {
+background: rgba(255, 255, 255, 0.85);
+left: 0;
+padding: 10px 0;
+position: fixed;
+text-align: center;
+top: 0;
+width: 100%;
+z-index: 100;
+display:none;
+}
+
+#header ul {
+font: normal 14px/14px Helvetica, Arial, Verdana, sans-serif;
+margin: 0 0 0 -30px;
+position: relative;
+text-transform: uppercase;
+z-index: 100;
+}
+
+#header.full {
+position: absolute;
+}
+
+#header ul li {
+display: inline-block;
+padding: 0 30px;
+}
+
+.wrap-me {
+max-width: 1000px;
+min-width:320px;
+margin: 0 auto;
+}
+
+.footer {
+background: rgba(0, 0, 0, 0.2);
+padding: 0.3em;
+box-shadow: 0px 5px 4px -5px #000 inset;
+}
+
+.sky-background {
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: spin 300s;
+	position: absolute;
+	z-index: -1;
+	height: 15em;
+	width: 15em;
+	left: 1.4em;
+	top: 0.3em;
+	
+}
+
+.main-message{ 0 139 189
+ 	padding:0.5em;
+ /*	background: #00A0DB linear-gradient(transparent, rgba(0,139,189,.3)); */
+    background-color:rgba(0, 139, 189, 1);
+    background-image: radial-gradient(50% 77%, ellipse cover, rgba(0, 139, 189, 0),  rgba(0, -81, -41, 1) 150%);
+	position: relative;
+	z-index: -1;
+	min-height:380px;
+	background-image: url('front-images/beautiful-design.jpg');
+	background-size:cover;
+	height:670px;
+	border-bottom: 1px solid green;
+}
+
+.main-logo {
+background: url('front-images/ux_angel_v2.png') no-repeat;
+text-indent: -9999px;
+text-align: left;
+height:200px;
+margin: 0 auto 0.2em;
+background-position: center center;
+background-size: contain;
+}
+
+.about-us {
+font-size:0.2em;
+color:white;
+padding-top:20px;
+}
+
+.about-us h1 {
+font-size:24em;
+padding-top:70px;
+}
+
+.about-us h2 {
+font-size:2em;
+padding-bottom: 6em;
+}
+
+.about-us h1, .about-us h2 {
+font-family: 'Pacifico', sans-serif;
+font-weight: 800;
+text-align:center;
+text-shadow: 2px 3px 3px #262626;
+}
+
+.define {
+font-family:'Times New Roman';
+font-size: 0.3em;
+margin-top: 0em;
+padding-left:5em;
+background: url('front-images/book-icon-white.png') no-repeat;
+background-position: 0;
+background-size: 4em;
+color:white;
+}
+
+/* =========== CHOICE BOX =========== */
+
+.round {
+   border-radius: 7px;
+}
+
+.inset-text {
+/* text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4); */
+}
+
+.sidebar {
+width:30%;
+float:right;
+color:white;
+margin-left:2em;
+}
+
+.sidebar-inside {
+ /* -webkit-gradient(
+  linear, left top, left bottom, 
+  from(rgba(0,0,0,0.2)),to(rgba(0,0,0,0.0)), color-stop(1,#333333)), */ 
+ 
+}
+
+.box-wrap {
+background: rgba(0, 0, 0, 0.5);
+padding:.2em;
+/* box-shadow: 0px 0px 4px #777; */
+}
+
+.box-wrap h2 {
+font-size: .5em;
+padding:.2em;
+color:white;
+font-family: 'Terminal Dosis', sans-serif;
+font-weight:200;
+}
+
+.top-box {
+position: relative;
+z-index: 1;
+top: -2.6em;
+}
+
+.middle-box {
+width:90%;
+}
+
+.grass-texture {
+background:url('front-images/grass-startup-design.jpg');
+position: relative;
+z-index: 0;
+/* height:760px; */
+}
+
+.gray-texture {
+background-image: url('front-images/fiber-texture.png');
+}
+
+/*
+.content:first-letter {
+font-weight:bold;
+font-size:65px;
+font-family: 'Terminal Dosis', sans-serif;
+float:left;
+padding:0;margin:-4px 5px 0px 0px;
+position: relative;
+background-color:none;
+line-height:0.9;
+color:#bebebe;
+} */
+
+.choice-box {
+background: white url('front-images/dashed-line.png') repeat-y center !important;
+}
+
+.content {
+background: #FFFFFF;
+box-shadow: 0px 0px 1px #000 inset;
+font-size: .24em;
+padding: 1em 1em 1.5em;
+}
+
+.choice {
+width: 45%;
+}
+
+.choice h2 {
+font-size:3.4em;
+text-align:center;
+color:#777;
+max-height: 60px;
+}
+
+.choice-a h2 {
+font-family: 'Neuton', cursive;
+font-weight: 200;
+}
+
+.choice-b h2 {
+font-family: 'Terminal Dosis', sans-serif;
+font-weight: 200;
+}
+
+.choice-a {
+float:left;
+padding-right:4%;
+}
+
+.choice-b {
+float:right;
+}
+
+/* MOBILE COMPATIBILITY 
+@media only screen and (max-device-width: 480px) {
+	.choice-box {
+	background: none;
+	}
+	.choice {
+	width:100%;
+	padding-bottom:5%;
+	}
+} */
+
+.button {
+display: block;
+padding: 2%;
+width: 30%;
+margin: 0 auto;
+text-align: center;
+text-decoration:none;
+font-family: 'Terminal Dosis', sans-serif;
+font-size:1.2em;
+text-transform:uppercase;
+background-color: #FF8100;
+background-repeat: repeat-x;
+background-image: -khtml-gradient(linear, left top, left bottom, from(#FFA040), to(#FF8100));
+background-image: -moz-linear-gradient(top, #FFA040, #FF8100);
+background-image: -ms-linear-gradient(top, #FFA040, #FF8100);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFA040), color-stop(100%, #FF8100));
+background-image: -webkit-linear-gradient(top, #FFA040, #FF8100);
+background-image: -o-linear-gradient(top, #FFA040, #FF8100);
+background-image: linear-gradient(top, #FFA040, #FF8100);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFA040', endColorstr='#FF8100', GradientType=0);
+border-color: #FF8100 #FF8100 #9E4E00;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+color:white;
+min-width:100px;
+}
+
+.yellow-button {
+color:white;
+background:#e9c500;
+border:1px solid #ddac00;
+
+
+}
+
+.blue-button {
+color:white;
+background:#2199c5;
+border:1px solid #0f6889;
+} 
+
+#bottom-half {
+height: 100%;
+width: 100%;
+border-top: 1px solid rgb(176, 200, 32);
+padding-bottom: 1.7em;
+z-index: 1;
+position: relative;
+}
+
+.clear {
+clear:both;
+}
+
+.bottom-shadow {
+width: 100%;
+height:15%;
+position: absolute;
+background-image: url('front-images/levitating-startup-shadow.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+#copywrite {
+margin:1em;
+text-align: center;
+font-size: 0.2em;
+color:#FFFFFF;
+}
