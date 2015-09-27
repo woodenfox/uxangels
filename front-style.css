@@ -167,6 +167,7 @@ padding: 0.3em;
 box-shadow: 0px 5px 4px -5px #000 inset;
 }
 
+/*
 .sky-background {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -177,8 +178,9 @@ box-shadow: 0px 5px 4px -5px #000 inset;
 	width: 15em;
 	left: 1.4em;
 	top: 0.3em;
-	
 }
+*/
+
 
 .main-message{ 0 139 189
  	padding:0.5em;
@@ -192,16 +194,6 @@ box-shadow: 0px 5px 4px -5px #000 inset;
 	background-size:cover;
 	height:670px;
 	border-bottom: 1px solid green;
-}
-
-.main-logo {
-background: url('front-images/ux_angel_v2.png') no-repeat;
-text-indent: -9999px;
-text-align: left;
-height:200px;
-margin: 0 auto 0.2em;
-background-position: center center;
-background-size: contain;
 }
 
 .about-us {
@@ -221,7 +213,7 @@ padding-bottom: 6em;
 }
 
 .about-us h1, .about-us h2 {
-font-family: 'Pacifico', sans-serif;
+font-family: 'Oxygen', sans-serif;
 font-weight: 800;
 text-align:center;
 text-shadow: 2px 3px 3px #262626;
@@ -333,10 +325,10 @@ max-height: 60px;
 }
 
 .choice-a h2 {
-font-family: 'Neuton', cursive;
+font-family: 'Terminal Dosis', cursive;
 font-weight: 200;
 }
-
+ 
 .choice-b h2 {
 font-family: 'Terminal Dosis', sans-serif;
 font-weight: 200;
