@@ -2,6 +2,21 @@
  * Globals
  */
 
+@keyframes fade-in{
+	
+	0%{
+		opacity:0;
+	}
+	
+	50%{
+		opacity:0.5;
+	}
+
+	100%{
+		opacity:1;
+	}
+}
+
 /* Links */
 a,
 a:focus,
@@ -31,12 +46,14 @@ body {
 
 body {
   text-align: center;
+  animation: fade-in 2s linear backwards;
+
 }
 
 .cover-heading-a {
 font-size: 14em;
 margin-bottom:-50px;
-color:#04bdeb
+color:#04bdeb;
 }
 
 .cover-heading-b {
