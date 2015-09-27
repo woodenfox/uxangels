@@ -6,6 +6,7 @@
 	
 	0%{
 		opacity:0;
+	    margin-right:20px;
 	}
 	
 	50%{
@@ -46,7 +47,7 @@ body {
 
 body {
   text-align: center;
-  animation: fade-in 2s linear backwards;
+  animation: fade-in 1s linear backwards;
 
 }
 
