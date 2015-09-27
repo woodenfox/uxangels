@@ -5,7 +5,7 @@
 @keyframes color-burn {
 	
 	0%{
-		color:#ffd000;
+		color:#3385cb;
 	}
 	
 	50%{
@@ -13,7 +13,7 @@
 	}	
 	
 	100%{
-		color:#ffd000;
+		color:#3385cb;
 	}
 
 }
@@ -32,6 +32,7 @@ a:hover {
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #04bdeb;
   border: 1px solid #04bdeb;
+  
 }
 
 
@@ -147,6 +148,8 @@ body {
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
+  animation: color-burn 10s linear infinite;
+  border: solid 2px;
 }
 
 
