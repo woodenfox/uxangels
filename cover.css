@@ -2,20 +2,20 @@
  * Globals
  */
 
-@keyframes fade-in{
+@keyframes color-burn {
 	
 	0%{
-		opacity:0;
-	    margin-right:21px;
+		color:#ffd000;
 	}
 	
 	50%{
-		opacity:0.5;
+		color:#04bdeb;
+	}	
+	
+	100%{
+		color:#ffd000;
 	}
 
-	100%{
-		opacity:1;
-	}
 }
 
 /* Links */
@@ -47,20 +47,19 @@ body {
 
 body {
   text-align: center;
-  animation: fade-in 1s linear backwards;
-
 }
 
 .cover-heading-a {
-font-size: 14em;
-margin-bottom:-50px;
-color:#04bdeb;
+  font-size: 14em;
+  margin-bottom:-50px;
+  color:#04bdeb;
+  animation: color-burn 10s linear infinite;
 }
 
 .cover-heading-b {
-font-size: 6em;
-font-family: 'Oxygen', sans-serif;
-margin-bottom:30px;
+  font-size: 6em;
+  font-family: 'Oxygen', sans-serif;
+  margin-bottom:30px;
 }
 
 
