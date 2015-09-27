@@ -50,6 +50,21 @@ body {
   text-align: center;
 }
 
+
+li {
+	font-size:20px;
+	line-height: 30px;
+}
+
+.main {
+	text-align: left;
+	font-size:20px;
+}
+
+.masterfoot {
+	font-size:9px;
+}
+
 .cover-heading-a {
   font-size: 14em;
   margin-bottom:-50px;
