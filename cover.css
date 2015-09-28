@@ -4,16 +4,16 @@
 
 @keyframes color-burn {
 	
-	0%{
-		color:#3385cb;
+	0% {
+		color:#04bdeb;
 	}
 	
-	50%{
-		color:#04bdeb;
+	50% {
+		color:#3385cc;
 	}	
 	
-	100%{
-		color:#3385cb;
+	100% {
+		color:#04bdeb;
 	}
 
 }
@@ -26,13 +26,12 @@ a:hover {
 }
 
 /* Custom default button */
-.btn-default,
+.btn-default, .btn-lg
  {
-  color: #FFF;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #04bdeb;
-  border: 1px solid #04bdeb;
-  
+  padding: 10px 20px;
+  font-weight: 500;
+  animation: color-burn 7s ease-in-out infinite;
+  border: solid 2px;
 }
 
 
@@ -50,6 +49,16 @@ body {
   text-align: center;
 }
 
+p, li {
+	font-size:20px;
+	line-height: 30px;
+	font-family: "Work sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:300; 
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Oxygen', sans-serif;	
+}
 
 li {
 	font-size:20px;
@@ -59,6 +68,7 @@ li {
 .main {
 	text-align: left;
 	font-size:20px;
+
 }
 
 .masterfoot {
@@ -69,7 +79,8 @@ li {
   font-size: 14em;
   margin-bottom:-50px;
   color:#04bdeb;
-  animation: color-burn 10s linear infinite;
+  font-weight:700;
+  animation: color-burn 7s ease-in-out infinite;
 }
 
 .cover-heading-b {
@@ -159,12 +170,6 @@ li {
 
 .cover {
   padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-  animation: color-burn 10s linear infinite;
-  border: solid 2px;
 }
 
 
