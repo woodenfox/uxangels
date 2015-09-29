@@ -18,6 +18,22 @@
 
 }
 
+@keyframes color-burn-border {
+	
+	0% {
+		border-color:#04bdeb;
+	}
+	
+	50% {
+		border-color:#3385cc;
+	}	
+	
+	100% {
+		border-color:#04bdeb;
+	}
+
+}
+
 /* Links */
 a,
 a:focus,
@@ -49,9 +65,44 @@ body {
 	margin-bottom:0px;
 }
 
+textarea, input {
+	font-size:16px;
+}
+
 body {
   text-align: center;
 }
+
+
+
+.mike-pic {
+  background: url(https://media.licdn.com/media/p/7/005/050/1f5/1946ab5.jpg);
+}
+
+ .dirk-pic {
+  background: url(https://media.licdn.com/media/p/5/005/01a/13f/08a0a9d.jpg);
+/*  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+         -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+         -webkit-filter: grayscale(100%);
+         filter: gray;
+         filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); */
+  
+ }
+
+.profile-pic {
+  width:200px;
+  height: 200px;
+  background-size:190px;
+  background-position:center;
+  background-repeat:no-repeat;
+  border-radius:99px;
+  border: 6px solid #04bdeb;
+  animation: color-burn-border 14s ease-in-out infinite;
+  margin:25px auto;
+ }
+ 
+
+
 
 p, li {
 	font-size:20px;
@@ -73,10 +124,6 @@ li {
 	text-align: left;
 	font-size:20px;
 
-}
-
-.masterfoot {
-	font-size:9px;
 }
 
 .cover-heading-a {
@@ -141,7 +188,7 @@ li {
 	padding:70px;
 	background-color: #262F36;
 	color:white;
-	text-align: left;
+	text-align: center;
 }
 
 .footer p {

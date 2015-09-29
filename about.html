@@ -83,29 +83,54 @@ Page Layout, Design, CSS & HTML by @woodenfox
 <!--- Main Content
 ====================================== -->
 
+
+
+
 	<div class="container" style="padding-top:40px; text-align:left;">
+		<h1>The UXA Team</h2><hr>
+		<!-- MIKE BIO #### -->
+		<div class="row">			
+			<div class="col-sm-4 col-md-3">
+				<div class="mike-pic profile-pic"></div>
+			</div>
+			<div class="col-sm-8 col-md-9">
+				<h3>Mike Messenger (Seattle) </h3>
+				<p>Product manager, front end engineer, and UX designer, Mike managed the launch of Amazon Follow—allowing customers to receive personal release announcements from authors on Amazon. He also launched an Amazon internal version of Qualtrics, a user research and survey tool. As VP of Product at Talenthouse, a social network for artists, he grew the user base from 1K users to >1.2MM and played a principal role in closing our $13.1M Series B.  				</p>
+			</div>	
+		</div>
+		
+		<!-- MIKE BIO #### -->
+		<div class="row">			
+			<div class="col-sm-4 col-md-3">
+				<div class="dirk-pic profile-pic"></div>
+			</div>
+			<div class="col-sm-8 col-md-9">
+				<h3>Dirk Stockton (San Francisco)</h3>
+				<p>Art Director, designer, software developer, and founder of Wit Design, Dirk's goal is to explore and advance the web as it's own medium. Using design to bridge the gap between users and utility. Dirk believes that the world deserves elegant and beautiful design.</p>
+			</div>	
+		</div>
+		<hr>
+		
 		<div class="row">
 			<div class="col-md-6">
-				<h1>What inspired this?</h1>
+				<h1>What is our story?</h1>
 
 
-				<p>UX Angels (UXA) was founded in 2012, in the Palo Alto, CA by a scrappy young UXD (@woodenfox) simply aiming to network and help other nearby startups. Since 2011, the group has grown to include members in Seattle, San Francisco, and Oakland.</p>
+				<p>UX Angels (UXA) was founded in 2012, in Palo Alto, CA. The group has grown to include angels in Seattle, San Francisco, and Oakland.</p>
 					<p>
 					The term UX Angel is inspired by Trail Angel, a name given to those who dedicate time and energy  every year to support those hiking 2663 mi (4286 km) from Mexico to Canada on the Pacific Crest Trail. Like startups and nonprofits, only a small percentage of hikers succeed in their journey. We dedicate our own resources and expertise to projects we recognize as pioneers for a better future. 
 				</p>
 			</div>
-
+			
 			<div class="col-md-6">
-				<h1>Starting with Seattle</h1>
+				<h1>Where are we located</h1>
 
 
-				<p>In person UXA services are currently centered in the Seattle
-				Metro Area</p>
+				<p>As a decentralized network, angels are located in Seattle, San Francisco, and Oakland.</p>
 
-
-				<div id="map" style="height:200px;">
-				</div>
-			</div>
+				<div id="seattle" style="height:200px;"></div> <hr>
+				<div id="SF" style="height:200px;"></div>
+				 <!--<hr><div id="SV" style="height:200px;"></div>	-->		</div> 
 		</div>
 	</div>
 
@@ -114,10 +139,13 @@ Page Layout, Design, CSS & HTML by @woodenfox
 ================================================== -->	
 	
 	<div class="footer">
-		<h5>ABOUT US</h5>
-		<p>The term UX Angel is inspired by Trail Angel, a name given to those who dedicate time and energy every year to support those hiking 2663 mi (4286 km) from Mexico to Canada on the Pacific Crest Trail. Like startups and nonprofits, only a small percentage of hikers succeed in their journey. We dedicate our own resources and expertise to projects we recognize as pioneers for a better future. <br><br>Creative Commons, share alike. Designed and built with love by <a style="color:white;" href="http://twitter.com/woodenfox">@woodenfox.</a>
+		<p>
+			Designed and built with love by <a style="color:white;" href="http://twitter.com/woodenfox">@woodenfox.</a>
 		</p>
+		<p>
+			Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away. Antoine de Saint-Exupery</p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://www.uxangels.org/front-images/creative-commons.png"/></a>
 	</div>
+
 	
 <!-- Google Maps Location Initialize
 ================================================== -->
@@ -125,24 +153,42 @@ Page Layout, Design, CSS & HTML by @woodenfox
 	<script>
 	function initMap() {
 
-	var myLatLng = {lat: 47.61, lng: -122.26};
-	var map = new google.maps.Map(document.getElementById('map'), {
+	var seattle = {lat: 47.61, lng: -122.26};
+	var SF = {lat: 37.78, lng: -122.3};
+	var SV = {lat: 37.38, lng: -122.05};
+	
+	var mapSeattle = new google.maps.Map(document.getElementById('seattle'), {
+		center: seattle,
 		scrollwheel: false,
 		navigationControl: false,
 		mapTypeControl: false,
 		scaleControl: false,
 		draggable: false,
-		zoom: 11,
-		center: myLatLng
-		});
-	var marker = new google.maps.Marker({
-		position: myLatLng,
-		map: map,
-		title: 'Hello World!'
-		});
+		zoom: 11
+		});	
+	var mapSF = new google.maps.Map(document.getElementById('SF'), {
+		center: SF,
+		scrollwheel: false,
+		navigationControl: false,
+		mapTypeControl: false,
+		scaleControl: false,
+		draggable: false,
+		zoom: 11
+		});	
 		
+	/*
+	var mapSV = new google.maps.Map(document.getElementById('SV'), {
+		center: SV,
+		scrollwheel: false,
+		navigationControl: false,
+		mapTypeControl: false,
+		scaleControl: false,
+		draggable: false,
+		zoom: 10
+		});			
 	}
-	
+	*/
+	}
 	</script> <script src=
 	"https://maps.googleapis.com/maps/api/js?key=AIzaSyBja8Dyu07lL6QSmEGoCYRsLgMme_q8ecA&signed_in=true&callback=initMap"
 	type="text/javascript"></script> 
