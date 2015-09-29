@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!--
 
 888   | Y88b    /      &      888b    |  e88~~\  888~~  888     ,d88~~\
@@ -16,159 +17,97 @@ Everything here is Creative Commons, share alike.
 Page Layout, Design, CSS & HTML by @woodenfox
 
  -->
-
-<html lang="en" dir="ltr">
+ 
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<link href="../../favicon.ico" rel="icon">
+
+	<title>UX Angels - Helping startups change the world—pro bono</title>
+	<!-- Bootstrap 3.3.5 -->
+	<link href=
+	"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+	rel="stylesheet"><!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300'
+	rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:700,500,300'
+	rel='stylesheet' type='text/css'><!-- Prefix (CSS Auto-syntax) -->
+
+	<script charset="utf-8" src="http://www.uxangels.org/js/prefixfree.min.js"
+	type="text/javascript"></script><!-- Animate CSS -->
+	<link href=
+	"https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css"
+	rel="stylesheet"><!-- Custom Styles -->
+	<link href="cover.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
-	<meta http-equiv="X-UA-Compatible" content="IE=9, IE=8, chrome=1" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<base href="https://www.uxangels.org/">
-	<meta name="description" content="UX Angels are user expirence and design professionals who help startups which better humanity - free of charge." />
-	<meta name="keywords" content="UX Angels, Startup, User Expirence, Designers, Help, Support, Connect, free consulting, humanity, change the world." />
-	<title>uxAngels: helping startups change the world.</title>
-	<link rel="stylesheet" href="http://www.uxangels.org/front-style.css"/>
-	<link rel="canonical" href="http://www.uxangels.org"/>
-	<link href='http://fonts.googleapis.com/css?family=Dancing+Script|Terminal+Dosis:200' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 
-<script type="text/javascript" charset="utf-8">
-
-/**** Dynamic Scaling Text thanks to Benjamin Hull - http://www.benhull.info/ ****/
-
-	$( document ).ready( function() {
-		var $body = $('.scale-me'); //Cache this for performance			
-		var setBodyScale = function() {
-			var scaleFactor = 0.35,
-				scaleSource = $body.width(),
-				maxScale = 600,
-				minScale = 100;
-
-			var fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:					
-			if (fontSize > maxScale) fontSize = maxScale;
-			if (fontSize < minScale) fontSize = minScale; //Enforce the minimum and maximums
-
-			$('.scale-me').css('font-size', fontSize + '%');
-		}
-			
-		   $(window).resize(function(){
-			setBodyScale();
-		});
-				
-		//Fire it when the page first loads:
-		setBodyScale();
-	});
-		
-/**** Anchor Slider thanks to Cedric Dugas - http://www.position-absolute.com *****/
-
-$(document).ready(function() {
-	$("a.anchorLink").anchorAnimate()
-});
-
-jQuery.fn.anchorAnimate = function(settings) {
-
- 	settings = jQuery.extend({
-		speed : 1100
-	}, settings);	
-	
-	return this.each(function(){
-		var caller = this
-		$(caller).click(function (event) {	
-			event.preventDefault()
-			var locationHref = window.location.href
-			var elementClick = $(caller).attr("href")
-			
-			var destination = $(elementClick).offset().top;
-			$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
-				window.location.hash = elementClick
-			});
-		  	return false;
-		})
-	})
-}
-
-/*** ############### END JS ############### ***/
-
-</script>
-
-</head>
 <body>
-<div class="cover"><div class="spin-gears"></div></div>
-	
-	    <div id="header" class="full">
-   		    <a href="/" title="Back to Top"><div class="main-logo">uxangels</div></a>
-    		  <ul>
-      			  <li><a href="#works" title="Works" class="">Works</a></li>
-    		      <li><a href="#capabilities" title="Capabilities" class="">Capabilities</a></li>
-       			  <li><a href="#about" title="About" class="">About</a></li>
-      			  <li><a href="#contact" title="Contact" class="">Contact</a></li>
-    		  </ul>
-    	</div>
+	<div class="site-wrapper animated fadeIn">
+		<div class="site-wrapper-inner">
+			<div class="cover-container">
+				<!--  DISABLING HEADER
+	   
+	   <div class="masthead clearfix">
+			<div class="inner">
+			  <h3 class="masthead-brand"><span style="color: #04bdeb">UX</span><span style="font-family: 'Oxygen', sans-serif;">Angels</span></h3>
+			  <nav>
+				<ul class="nav masthead-nav">
+				  <li class="active"><a href="#">Home</a></li>
+				  <li><a href="#">Features</a></li>
+				  <li><a href="#">Contact</a></li>
+				</ul>
+			  </nav>
+			</div>
+		  </div> 
+		  
+		  END DISABLED HEADERR  -->
 
-	
-	<div id="wrap">
-		
-<!-- ############### TOP-CHOICE-BOX ############### -->
-  				<div class="grass-texture">	
-		<div class="main-message">
-			<!-- <div class="sky-background"></div> -->
-			<div class="about-us wrap-me">
-				<div class="main-logo"></div>
-				<h1 class="scale-me">Designers who make a difference.</h1>
-				<h2>Helping startups change the world - <i>pro bono</i></h2>
-			</div>
-		</div>
-		
-			<div class="top-box box-wrap round wrap-me">
-				<p class="define inset-text"><strong>ux-angel</strong>[you-ex-an-jel] <i>noun</i>
-				1. a moonlighting design or user experience professional who offers free services to startups who better humanity.</p>
-				<div class="content choice-box round">
-					<div class="choice choice-a">
-						<h2 class="scale-me">{ Designers }</h2>
-						<p>Meet startups, get early access to revolutionary products and give feedback that makes a difference.</p>
-						<a href="#about" id="button-a" class="anchorLink button yellow-button round inset-text">Learn More</a>
-					</div>
-					<div class="choice choice-b">
-						<h2 class="scale-me">Startups</h2>
-						<p>Connect with pre-screened user experience professionals and get <i>free</i> design consulting.  No strings attached.</p>
-					 	<a href="#team" id="button-b" class="anchorLink button orange-button round inset-text">Learn More</a>
-					</div>
-					<div class="clear"></div>
+
+				<div class="inner cover">
+					<h1 class="cover-heading-a">UX</h1>
+
+
+					<h1 class="cover-heading-b">Angels</h1>
+
+
+					<p class="lead">Moonlighting UX professionals helping
+					startups change the world—pro bono</p>
+
+
+					<p class="lead"><a class="btn btn-lg btn-default" href=
+					"home.html">I'm a startup, tell me more</a>
+					</p>
+
+
+					<p class="lead"><a class="btn btn-lg btn-default" href=
+					"become-a-ux-angel.html">I'm a designer, tell me more</a>
+					</p>
 				</div>
-				<span class="bottom-shadow"></span>	
-			</div>
-		</div>
-<!-- ############### SECOND MODULE ############### -->
-		    <div class="gray-texture">
-			<a name="about" id="about" style="position:relative; top: 1em;">&nbsp;</a>
-			<div class="middle-box box-wrap round wrap-me">
-				<h2 class="inset-text">Why do we do it?</h2>
-				<div class="content round">
-				<p>The term UX Angel is inspired by Trail Angel, a name given to those who dedicate time and energy every year to support those hiking 2663 mi (4286 km) from Mexico to Canada on the Pacific Crest Trail.  
-Like startups, only a small percentage of hikers succeed in their journey.  It is UX Angels’ belief that startup innovation fuels the global economy and improves our daily lives.  We dedicate our own resources and expertise to projects we recognize as pioneers for a better future.</p>
-					<p>Like startups, only a small percentage of hikers succeed in their journey.  It is UX Angels’ belief that startup innovation fuels the global economy and improves our daily lives.  We dedicate our own resources and expertise to projects we recognize as pioneers for a better future.</p><p>The reality is, good ideas are better with great design.  Better design means faster and more effective communication.  The effectiveness of design can and should be measured by how quickly and accurately it communicates it's intended message.  The line between art and design in our experience has been the level of accuracy required in that communication.</p><p>Human beings are phenomenally complicated, each individual perceives and interprets their surroundings differently.  The task of a designer is to create an experience which rises above these differences.  An experience that can connect with us deeply, and quickly, but with the generality to reach minds of all kinds.</p>
+
+
+				<div class="mastfoot">
+					<div class="inner">
+						<p>Creative Commons, share alike. Design by <a href=
+						"http://twitter.com/woodenfox">@woodenfox</a></p>
 					</div>
-					<div class="clear"></div>
-			</div>
-		    </div>
-<!-- ############### THIRD MODULE ############### -->
-			<div class="grass-texture">
-			<a name="team" id="team" style="position:relative; top: 1em;">&nbsp;</a>
-			<div class="middle-box box-wrap round wrap-me">
-				<p class="define"><strong>ux-angel</strong>[you-ex-an-jel] <i>noun</i>
-				1. a moonlighting design or user expirence professional who offers free services to startups who better humanity.</p>
-				<div class="content round">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in purus eget dolor malesuada aliquam eu sit amet lacus. Cras at pellentesque metus. Vestibulum euismod magna et est consectetur cursus. Sed urna odio, placerat ac malesuada at, luctus at tortor. Vestibulum vel quam sit amet urna vulputate porttitor ut a risus. Donec vitae arcu mauris, non sodales sapien. Nulla dolor nisi, adipiscing nec scelerisque id, adipiscing vel purus. Nullam condimentum, nisi ut tempus pretium, nibh orci congue eros, et sollicitudin odio nunc non risus. Maecenas eu nunc urna, quis tempus arcu. Donec semper viverra hendrerit. Nam aliquam viverra justo quis iaculis.</p>
-					<div class="clear"></div>
 				</div>
 			</div>
-	   </div>
-	   </div>
-	
-		<!-- ############### FOOTER ############### -->
-		<div class="footer">
-			<div id="copywrite"><p>Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away. Antoine de Saint-Exupery (1900 - 1944)</p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://www.uxangels.org/front-images/creative-commons.png" /></a></div>
+		</div>
 	</div>
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<script src=
+	"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
