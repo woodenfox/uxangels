@@ -56,56 +56,32 @@ Page Layout, Design, CSS & HTML by @woodenfox
 
 <body class="animated fadeIn">
 
-<!--- Global Nav
+<!--- HEADER 
 ====================================== -->
 
-	<nav class="navbar navbar-inverse">
-		<div class="container">
-			<div class="navbar-header">
-				<button class="navbar-toggle collapsed" data-target="#navbar"
-				data-toggle="collapse" type="button"><span class=
-				"sr-only">Toggle navigation</span> <span class=
-				"icon-bar"></span> <span class="icon-bar"></span> <span class=
-				"icon-bar"></span></button> <a class="navbar-brand" href=
-				"#">UXA</a>
-			</div>
+       <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><span style="color: #04bdeb">UX</span><span style="font-family: 'Oxygen', sans-serif;">Angels</span></a>
 
-
-			<div class="collapse navbar-collapse" id="navbar">
-				<ul class="nav navbar-nav">
-					<li class="active">
-						<a href="index.html">Home</a>
-					</li>
-
-
-					<li>
-						<a href="#about">About</a>
-					</li>
-
-
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-			<!--/.nav-collapse -->
-		</div>
-	</nav>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact-us.html">Contact</a></li>          
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
 <!--- Main Content
 ====================================== -->
-
-	<div style=
-	"background: url('front-images/people-woman-coffee-meeting.jpg') no-repeat; padding: 20px 40px; color: white; height: 150px; text-align:left; background-size: cover;">
-	<div class="container" style="text-align:left;">
-			<div class="row col-sm-6" style=
-			"background-color:rgba(0,0,0,0.8); padding: 10px 30px;">
-				<h1><span>Contact Us</span>
-				</h1>
-			</div>
-		</div>
-	</div>
-
 
 	<div class="container" style="padding-top:40px;">
 		<div class="row">
@@ -147,7 +123,7 @@ Page Layout, Design, CSS & HTML by @woodenfox
 				</form>
 			</div>
 
-
+			<hr class="visible-phone"/>
 			<div class="col-md-6">
 				<h1>Seattle Born & Raised</h1>
 
@@ -164,16 +140,12 @@ Page Layout, Design, CSS & HTML by @woodenfox
 
 	
 <!-- Footer
-================================================== -->
-
-	<div class="footer" style="color:grey;">
-		<div class="container" style="padding-top:40px;">
-			<div class="row">
-				<p style="font-size: 14px;">Creative Commons, share alike.
-				Website hand-made by <a href=
-				"http://twitter.com/woodenfox">@woodenfox</a></p>
-			</div>
-		</div>
+================================================== -->	
+	
+	<div class="footer">
+		<h5>ABOUT US</h5>
+		<p>The term UX Angel is inspired by Trail Angel, a name given to those who dedicate time and energy every year to support those hiking 2663 mi (4286 km) from Mexico to Canada on the Pacific Crest Trail. Like startups and nonprofits, only a small percentage of hikers succeed in their journey. We dedicate our own resources and expertise to projects we recognize as pioneers for a better future. <br><br>Creative Commons, share alike. Designed and built with love by <a style="color:white;" href="http://twitter.com/woodenfox">@woodenfox.</a>
+		</p>
 	</div>
 	
 <!-- Google Maps Location Initialize
@@ -184,6 +156,11 @@ Page Layout, Design, CSS & HTML by @woodenfox
 	var myLatLng = {lat: 47.61, lng: -122.26};
 
 	var map = new google.maps.Map(document.getElementById('map'), {
+	scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    draggable: false,
 	zoom: 11,
 	center: myLatLng
 	});
@@ -214,6 +191,7 @@ Page Layout, Design, CSS & HTML by @woodenfox
 		$('#contact-form').bootstrapValidator({
 	//        live: 'disabled',
 		message: 'This value is not valid',
+		
 		feedbackIcons: {
 			valid: 'glyphicon glyphicon-ok',
 			invalid: 'glyphicon glyphicon-remove',
