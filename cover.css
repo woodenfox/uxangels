@@ -2,7 +2,7 @@
  * Globals
  */
 
-@keyframes color-burn {
+@keyframes color-burn-text {
 	
 	0% {
 		color:#04bdeb;
@@ -18,18 +18,21 @@
 
 }
 
-@keyframes color-burn-border {
+@keyframes color-burn-all {
 	
 	0% {
 		border-color:#04bdeb;
+		color:#04bdeb;
 	}
 	
 	50% {
 		border-color:#3385cc;
+		color:#3385cc;
 	}	
 	
 	100% {
 		border-color:#04bdeb;
+		color:#04bdeb;
 	}
 
 }
@@ -46,8 +49,9 @@ a:hover {
  {
   padding: 10px 20px;
   font-weight: 500;
-  animation: color-burn 7s ease-in-out infinite;
-  border: solid 2px;
+  border: solid 2px #04bdeb;
+  color:#04bdeb;
+  animation: color-burn-all 7s ease-in-out infinite;
 }
 
 
@@ -80,13 +84,7 @@ body {
 }
 
  .dirk-pic {
-  background: url(https://media.licdn.com/media/p/5/005/01a/13f/08a0a9d.jpg);
-/*  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-         -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-         -webkit-filter: grayscale(100%);
-         filter: gray;
-         filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); */
-  
+  background: url(https://media.licdn.com/media/p/5/005/01a/13f/08a0a9d.jpg);  
  }
 
 .profile-pic {
@@ -97,7 +95,7 @@ body {
   background-repeat:no-repeat;
   border-radius:99px;
   border: 6px solid #04bdeb;
-  animation: color-burn-border 14s ease-in-out infinite;
+  animation: color-burn-all 14s ease-in-out infinite;
   margin:25px auto;
  }
  
@@ -131,7 +129,7 @@ li {
   margin-bottom:-60px;
   color:#04bdeb;
   font-weight:700;
-  animation: color-burn 7s ease-in-out infinite;  
+  animation: color-burn-text 7s ease-in-out infinite;  
 
 }
 
